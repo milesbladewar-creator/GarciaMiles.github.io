@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miles Garcia | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000;
+    color:white;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#0d0d0d;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 0 15px red;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:red;
+    text-shadow:0 0 10px red;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:red;
+    text-shadow:0 0 10px red;
+}
+
+/* Hero Section */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+    padding:20px;
+}
+
+.profile-pic{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid red;
+    box-shadow:0 0 25px red;
+}
+
+.hero h1{
+    margin-top:20px;
+    font-size:55px;
+    color:red;
+    text-shadow:0 0 15px red;
+}
+
+.hero h2{
+    margin-top:10px;
+    color:#ddd;
+}
+
+.hero p{
+    margin-top:15px;
+    max-width:700px;
+    line-height:1.8;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:red;
+    margin-bottom:40px;
+    text-shadow:0 0 10px red;
+}
+
+/* About */
+.about{
+    background:#111;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 0 20px rgba(255,0,0,.4);
+    text-align:center;
+}
+
+.about p{
+    line-height:1.8;
+}
+
+/* Skills */
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    padding:15px 25px;
+    border:2px solid red;
+    border-radius:30px;
+    box-shadow:0 0 10px red;
+    transition:.3s;
+}
+
+.skill:hover{
+    background:red;
+    color:black;
+}
+
+/* Projects */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#111;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(255,0,0,.5);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px red;
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-info{
+    padding:20px;
+}
+
+.project-info h3{
+    color:red;
+    margin-bottom:10px;
+}
+
+.project-info p{
+    line-height:1.6;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+    background:#111;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 0 20px rgba(255,0,0,.5);
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0d0d0d;
+    margin-top:30px;
+    box-shadow:0 0 15px red;
+}
+
+footer p{
+    color:#aaa;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:40px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="logo">Miles Garcia</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Home -->
+<section class="hero" id="home">
+    <img src="Milesssss.png" alt="Profile Picture" class="profile-pic">
+
+    <h1>Miles Garcia</h1>
+
+    <h2>Student | Web Developer | Programmer</h2>
+
+    <p>
+        Welcome!. I am Miles Garcia, a passionate
+        student who enjoys creating websites, coding applications,
+        and learning new technologies. This portfolio showcases my
+        skills, projects, and achievements.
+    </p>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            Hello! My name is Miles Garcia. I am interested in web
+            development, programming, and technology. I enjoy building
+            projects that improve my skills and help solve real-world
+            problems. I am always eager to learn and expand my knowledge
+            in software development and design.
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Java</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">UI Design</div>
+        <div class="skill">Problem Solving</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <img src="student.jpg" alt="Project 1">
+
+            <div class="project-info">
+                <h3>Student Attendance System</h3>
+
+                <p>
+                    A Java-based attendance system that allows users
+                    to add students, record attendance, search records,
+                    and generate reports efficiently.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="project2.jpg" alt="Project 2">
+
+            <div class="project-info">
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A responsive personal portfolio website created
+                    using HTML and CSS featuring a modern glowing red
+                    and black design.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact">
+        <p><strong>Name:</strong> Miles Garcia</p>
+        <p><strong>Email:</strong> garciamiles12345@gmail.com</p>
+        <p><strong>Phone:</strong> +63 975 357 0828</p>
+        <p><strong>Location:</strong> Philippines</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Miles Garcia | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
